@@ -1,75 +1,78 @@
-/* ‘S‘ÌƒŠƒZƒbƒg */
+/* å…¨ä½“ */
 body {
   margin: 0;
-font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
-.btn {
-  display: inline-block;
-  background: royalblue;
-  color: white;
-  padding: 0.5em 1.2em;
-  border-radius: 9999px;
-  text-decoration: none;
-  transition: 0.3s;
-}
-.btn:hover { background: darkblue; }
-
-
-/* ƒwƒbƒ_[ */
+/* ãƒ˜ãƒƒãƒ€ãƒ¼ */
 .header {
-  background: royalblue;
+  background-color: #222;
   color: white;
-  padding: 1em;
+  padding: 1rem;
   text-align: center;
 }
-
 .header nav ul {
   list-style: none;
   padding: 0;
   display: flex;
   justify-content: center;
-  gap: 1em;
+  gap: 1rem;
 }
-
 .header nav a {
   color: white;
   text-decoration: none;
 }
 
-@media (max-width: 768px) {
-  .container { flex-direction: column; }
-  .item { margin-bottom: 1em; }
-}
-
-
-/* ƒƒCƒ“iFlexbox‚Å‰¡•À‚Ñj */
+/* ãƒ¡ã‚¤ãƒ³ã‚³ãƒ³ãƒ†ãƒŠ */
 .container {
   display: flex;
-  padding: 1em;
-  gap: 1em;
-}
-.avatar {
-  width: 160px;         /* D‚«‚ÈƒTƒCƒY‚É */
-  height: 160px;        /* ³‰~‚É‚µ‚½‚¢‚Ì‚Å•‚‚³ */
-  border-radius: 50%;   /* ‚±‚±‚ªŠÛ‚­‚·‚éŠÌ */
-  object-fit: cover;    /* ‰æ‘œ‚Ì’†‰›‚ğƒgƒŠƒ~ƒ“ƒO‚µ‚ÄƒtƒBƒbƒg */
-  display: block;       /* —]Œv‚È‰º—]”’–h~ */
-  margin: 0 auto 0.75rem; /* ’†‰›Šñ‚¹{‰º‚É­‚µ—]”’ */
-  box-shadow: 0 6px 20px rgba(0,0,0,.15); /* ‚Ù‚ñ‚Ì‚è‰ei”CˆÓj */
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
 }
 
+/* ã‚»ã‚¯ã‚·ãƒ§ãƒ³ */
 .item {
-  flex: 1;
-  background: #f0f0f0;
-  padding: 1em;
-  border-radius: 8px;
+  background-color: #f0f0f0;
+  padding: 1rem;
+  border-radius: 10px;
 }
 
-/* ƒtƒbƒ^[ */
-.footer {
-  background: #333;
+/* ãƒ—ãƒ­ãƒ•ã‚£ãƒ¼ãƒ«ç”»åƒ */
+.avatar {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+/* ãƒ¡ãƒ¼ãƒ«ãƒœã‚¿ãƒ³ */
+.btn {
+  display: inline-block;
+  background: royalblue;
   color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.btn:hover {
+  background: darkblue;
+}
+
+/* ãƒ•ãƒƒã‚¿ãƒ¼ */
+.footer {
   text-align: center;
-  padding: 1em;
+  padding: 1rem;
+  background-color: #222;
+  color: white;
+}
+
+/* ã‚¹ãƒãƒ›å¯¾å¿œ */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
 }
