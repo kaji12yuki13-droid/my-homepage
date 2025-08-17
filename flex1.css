@@ -1,0 +1,75 @@
+/* 全体リセット */
+body {
+  margin: 0;
+font-family: 'Noto Sans JP', sans-serif;
+}
+
+.btn {
+  display: inline-block;
+  background: royalblue;
+  color: white;
+  padding: 0.5em 1.2em;
+  border-radius: 9999px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.btn:hover { background: darkblue; }
+
+
+/* ヘッダー */
+.header {
+  background: royalblue;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+.header nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+.header nav a {
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .container { flex-direction: column; }
+  .item { margin-bottom: 1em; }
+}
+
+
+/* メイン（Flexboxで横並び） */
+.container {
+  display: flex;
+  padding: 1em;
+  gap: 1em;
+}
+.avatar {
+  width: 160px;         /* 好きなサイズに */
+  height: 160px;        /* 正円にしたいので幅＝高さ */
+  border-radius: 50%;   /* ここが丸くする肝 */
+  object-fit: cover;    /* 画像の中央をトリミングしてフィット */
+  display: block;       /* 余計な下余白防止 */
+  margin: 0 auto 0.75rem; /* 中央寄せ＋下に少し余白 */
+  box-shadow: 0 6px 20px rgba(0,0,0,.15); /* ほんのり影（任意） */
+}
+
+.item {
+  flex: 1;
+  background: #f0f0f0;
+  padding: 1em;
+  border-radius: 8px;
+}
+
+/* フッター */
+.footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
